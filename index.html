@@ -4,17 +4,29 @@
         <title> My page </title>
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="description" content="Free Web tutorials">
+        <link rel="styleSheet" href="css/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
     </head>
+
     <body>
-       <section id="Name">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#Experience">Experience</a>
+            <a href="#Connect">Connect</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </nav>
+       <section id="Name" style="text-align: center;">
         <h1> Spozmai Helali</h1>
        </section>
-       <section id="about">
+       <section id="about" class="sectionAbout">
         <h2> About </h2>
-        <p>I am student of CTD.</p>
+        <p class="playwrite-be-vlg ">I am student of CTD.</p>
        </section>
         
-       <section id="Experience">
+       <section id="Experience" class="sectionExperience">
         <h2>Experience</h2>
         <ul> 
             <li>I worked in x project.</li>
@@ -23,13 +35,22 @@
         </ul>
        </section>
 
-       <section id="Connect">
+       <section id="Connect" class="sectionConnect">
         <h2>Connect</h2>
         <ul>
             <li>Email</li>
             <li>LinkedIn</li>
             <li>Twitter</li> 
         </ul>
+       </section>
+       <section id="skills">
+        <h2>Skills</h2>
+
+       </section>
+
+       <section id="projects">
+        <h2>Projects</h2>
+
        </section>
        
     </body>
