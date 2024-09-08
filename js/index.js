@@ -57,3 +57,28 @@ messageList.appendChild(newMessage);
     messageForm.reset();
 });
 
+
+
+const apiUrl = `https://api.github.com/users/spozmai/repos`;
+
+fetch(apiUrl)
+  .then(response => response.json()) 
+  .then(data => {
+    const repositories = data; 
+    console.log(repositories); 
+
+    const projectSection = document.getElementById('projects'); 
+    const projectList = projectSection.querySelector('ul'); 
+
+    projectList.innerHTML = '';
+
+    repositories.forEach(repo => {
+      const project = document.createElement('li');
+      project.innerText = repo.name;
+      projectList.appendChild(project);
+    });
+
+  })
+  .catch(error => {
+    console.error('Error:', error); 
+  });
