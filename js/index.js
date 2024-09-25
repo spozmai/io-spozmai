@@ -1,4 +1,4 @@
-//this code belong to footer section
+//This code belong to footer section
 const today = new Date();
 const thisYear = today.getFullYear();
 const body = document.body;
