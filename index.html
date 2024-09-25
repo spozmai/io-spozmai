@@ -8,53 +8,63 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     </head>
 
     <body>
         <nav>
-            <a href="#about">About</a>
-            <a href="#Experience">Experience</a>
-            <a href="#Connect">Connect</a>
-            <a href="#skills">Skills</a>
+            <a href="#about" style="margin-right: 20px;">About</a>
+            <a href="#Experience" style="margin-right: 20px;">Experience</a>
+            <a href="#Connect" style="margin-right: 20px;">Connect</a>
+            <a href="#skills" style="margin-right: 20px;">Skills</a>
             <a href="#projects">Projects</a>
         </nav>
        <section id="Name" style="text-align: center;">
        
             <h1> Spozmai Helali</h1>
         
-        
        </section>
        <section id="about" class="sectionAbout">
         <h2> About </h2>
-        <p class="playwrite-be-vlg ">I am student of CTD.</p>
+        <p class="playwrite-be-vlg ">Hi my name is Spozmai Helali. I am from Afghanistan.I am student of Code The Dream.</p>
+        <p class="playwrite-be-vlg ">I am married and have two children. Cooking and traveling  are my favorite hobbies</p>
        </section>
         
        <section id="Experience" class="sectionExperience">
-        <h2>Experience</h2>
-        <ul> 
-            <li>I worked in x project.</li>
-            <li>I worked in y project.</li>
-            <li>I worked in z project.</li>
-        </ul>
+        <h2>Experience</h2> 
+            <div>I worked in x project.</div>
+            <div>I worked in y project.</div>
+            <div>I worked in z project.</div>
+            <div>I worked in xyz project.</div>
+       
        </section>
 
        <section id="Connect" class="sectionConnect">
         <h2>Connect</h2>
         <ul>
-            <li>Email</li>
-            <li>LinkedIn</li>
-            <li>Twitter</li> 
+            <li>
+                Email: <a href="mailto:spozmai.helali@gmail.com"><i class="fa-regular fa-envelope" style="color: #050505;"></i></a>
+            </li>
+            <li>
+                Twitter: <a href="#" target="_blank"><i class="fab fa-twitter" style="color: #050505;"></i></a>
+            </li>
+            <li>
+                Github:<a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github" style="color: #050505;"></i></a>
+            </li>
+             
         </ul>
        </section>
-       <section id="skills">
+       <section id="skills" class="sectionSkills">
         <h2>Skills</h2>
-        <ul>
+        <div>
             
-        </ul>
+        </div>
        </section>
 
-       <section id="projects">
+       <section id="projects" class="sectionProjects">
         <h2>Projects</h2>
+        
         <ul></ul>
       </section>
 
@@ -62,15 +72,42 @@
        <section>
         <h2>Leave a Message</h2>
         <form name="leave_message"> 
-            <label>user Name</label>
-            <input type="text" name="userName" required="true"><br><br>
-            <label>Email</label>
-            <input type="email" name="userEmail" required="true"><br><br>
-            <label>Message</label>
-            <textarea name="usersMessage" required="true">
-            </textarea><br><br>
-            <button type="submit">Submit</button>
+            <table>
+                <tr>
+                    <td>
+                        <label>User Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="userName" required="true">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Email</label>
+                    </td>
+                    <td>
+                        <input type="email" name="userEmail" required="true">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Message</label>
+                    </td>
+                    <td>
+                        <textarea name="usersMessage" required="true">
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
 
+                    </td>
+                    <td>
+                        <button type="submit" style="width: 110px; height: 35px; font-size: 20px; background-color: rgb(180, 180, 180);">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        
         </form>
        </section>
        <section id="Messages">

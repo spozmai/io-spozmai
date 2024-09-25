@@ -1,4 +1,4 @@
-
+//this code belong to footer section
 const today = new Date();
 const thisYear = today.getFullYear();
 const body = document.body;
@@ -9,17 +9,20 @@ const copyright = document.createElement('p');
 copyright.innerHTML = ` ${thisYear} Spozmai Helali. All rights reserved.`;
 footer.appendChild(copyright);
 body.appendChild(footer);
-
+ 
+//this code belong to skill section
 const skills = ["JavaScript", "HTML", "CSS", "GitHub"];
 const skillsSection = document.getElementById('skills');
-const skillsList = skillsSection.querySelector('ul');
+const skillsList = skillsSection.querySelector('div');
 
 for (let i = 0; i < skills.length; i++) {
-    const skill = document.createElement('li');
+    const skill = document.createElement('div');
+    skill.classList.add("sectionSkillItems");
     skill.innerText = skills[i];
     skillsList.appendChild(skill);
 }
 
+//tis code is for leav a message form submit
 const messageForm = document.querySelector('form[name="leave_message"]');
 messageForm.addEventListener('submit', function(event) {
 
@@ -57,7 +60,7 @@ messageList.appendChild(newMessage);
     messageForm.reset();
 });
 
-
+//this code is belong to project section and fetching list of repos from github
 
 const apiUrl = `https://api.github.com/users/spozmai/repos`;
 
@@ -74,7 +77,14 @@ fetch(apiUrl)
 
     repositories.forEach(repo => {
       const project = document.createElement('li');
-      project.innerText = repo.name;
+      const link = document.createElement('a');
+
+      link.href = repo.html_url; 
+      link.target = "_blank"; 
+      link.innerText = repo.name;
+      
+      project.appendChild(link); 
+      
       projectList.appendChild(project);
     });
 
