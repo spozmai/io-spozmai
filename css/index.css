@@ -1,0 +1,43 @@
+body{
+    background-color: blanchedalmond;
+}
+p{
+    color: blue;
+}
+h2{
+    color: brown;
+    font-size: 25px;
+    font-weight: 600;
+}
+h1{
+    color: red;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+
+.playwrite-be-vlg {
+  font-family: "Playwrite BE VLG", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.sectionAbout{
+    border: 2px dashed black;
+    text-align: left;
+    margin:5px 10px 10px 5px;
+}
+.sectionExperience{
+    border: 2px solid black;
+    margin:5px 10px 10px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.sectionConnect{
+    border: 2px solid blue;
+    margin: 5px 10px 10px 5px;
+    
+
+}
