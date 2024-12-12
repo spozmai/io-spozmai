@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(249, 245, 238);
+
+}
+p{
+    color: rgb(2, 2, 2);
+}
+h2{
+    color: brown;
+    font-size: 25px;
+    
+    font-weight: 600;
+}
+h1{
+    color: red;
+    font-size: 40px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+.playwrite-be-vlg {
+  font-family: "Playwrite BE VLG", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.sectionAbout{
+    border: 2px dashed black;
+    text-align: left;
+    margin:5px 10px 10px 5px;
+}
+.sectionExperience{
+    border: 2px solid black;
+    margin:5px 10px 10px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.sectionConnect{
+    border: 2px solid blue;
+    margin: 5px 10px 10px 5px;
+    
+
+}
+ul{
+    margin: 40px;
+    padding: 10px;
+    background-color: rgb(245, 222, 193);
+    font-size: 20px;
+}
+
+/* Mobile devices (max-width: 600px) */
+@media (max-width: 1100px) {
+    body {
+        margin: 8px;
+        background-color: red; /* 1st change: background color */
+    }
+    h1 {
+        font-size: 24px; /* 1st change: font size */
+        color: #333; /* 2nd change: text color */
+    }
+    ul {
+        padding: 10px; /* 1st change: padding */
+        background-color: #1e0368; /* 2nd change: background color */
+    }
+}
+
+/* Tablet devices (max-width: 900px) */
+@media (max-width: 1400px) {
+    h2 {
+        font-size: 20px; /* 1st change: font size */
+        color: #370e90; /* 2nd change: text color */
+
+    }
+    #Name {
+        font-size: 28px; /* 1st change: font size */
+        font-style: normal; /* 2nd change: font style */
+        font-weight: bold;
+    }
+    .sectionExperience {
+        padding: 15px; /* 1st change: padding */
+        background-color: #16dd16; /* 2nd change: background color */
+    }
+}
